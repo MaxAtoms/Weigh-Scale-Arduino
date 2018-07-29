@@ -17,6 +17,20 @@ void setup() {
 }
 
 void loop() {
-  Serial.println(scale.getGram()/1000,2);
-  delay(50);
+  Serial.println(scale.getGram(),0);
+
+  checkForTare();
 }
+
+void checkForTare() {
+  char incomingByte = 0;
+
+  if (Serial.available() > 0) {
+    incomingByte = Serial.read();
+  }
+
+  if(incomingByte == 'T') {
+    scale.setOffset(scale.averageValue());
+  }
+}
+
