@@ -1,11 +1,10 @@
 /*
  * Arduino project to read analog weight values from a connected HX711 chip.
  * 
- * To find the calibration_ratio use:
- * https://github.com/aguegu/ardulibs/tree/master/hx711
+ * To find the calibration_ratio use hx711_test
  * 
  * Datasheet of the HX711 chip:
- * https://www.mouser.com/ds/2/813/hx711_english-1022875.pdf
+ * https://cdn.sparkfun.com/datasheets/Sensors/ForceFlex/hx711_english.pdf
  */
 
 double calibration_ratio = 13.21; // Adapt this value to fit your setup
