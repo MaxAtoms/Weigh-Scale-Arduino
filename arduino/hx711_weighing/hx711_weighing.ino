@@ -9,8 +9,8 @@
 
 double calibration_ratio = 13.21; // Adapt this value to fit your setup
 
-const uint8_t pin_dout = A1; // Data Out Pin
-const uint8_t pin_sck = A0; // Serial Clock Pin
+const uint8_t pin_dout = 2; // Data Out Pin
+const uint8_t pin_sck = 3; // Serial Clock Pin
 
 const byte REPETITIONS = 5; // Number of measurements taken for median weight value
 long offset;

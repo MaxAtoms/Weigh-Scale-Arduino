@@ -9,8 +9,8 @@ Arduino code to calculate weight values from a [HX711 Load Cell Amplifier](https
 |Arduino|HX711|
 |--|--|
 |GND|GND|
-|A1|DT (Data Out)|
-|A0|SCK (Serial Clock)|
+|2|DT (Data Out)|
+|3|SCK (Serial Clock)|
 |5V|VCC|
 
 *For the pins DT and SCK any digital or analog pin on the Arduino can be used. These are just examples from the code.*
